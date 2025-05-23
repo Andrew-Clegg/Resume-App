@@ -1,0 +1,4 @@
+.card-box{
+  display: 'grid';
+  gap: '16px';
+}
