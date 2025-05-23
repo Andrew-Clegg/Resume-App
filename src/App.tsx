@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import './app.css'
+import './App.css'
 
 const App: React.FC = () => {
   return (
