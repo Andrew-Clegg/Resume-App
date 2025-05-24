@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+
+a {
+    color:blue;
+    text-decoration: underline;
+}
+
+footer{
+  margin-left: auto;
+}

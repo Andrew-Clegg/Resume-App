@@ -2,3 +2,9 @@
   display: 'grid';
   gap: '16px';
 }
+
+main{
+  margin: auto;
+  max-width: 80%;
+}
+

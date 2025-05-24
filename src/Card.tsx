@@ -3,22 +3,21 @@ import { useState } from 'react';
 
 interface CardProps {
   title: string;
+  subtitle: string;
   desc: string;
   imageUrl?: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, desc, imageUrl }) => {
+const Card: React.FC<CardProps> = ({ title, subtitle, desc, imageUrl }) => {
     const [isOpen, setIsOpen] = useState(false); // hidden by default
     return (
-    <div style={styles.card}>
-      <button onClick={() => setIsOpen(!isOpen)} >
-        <h3>{title}</h3>
-      </button>
+    <div style={styles.card} onClick={() => setIsOpen(!isOpen)}>
+    <p className='text-medium font-semibold'>{title}</p>
 
       {isOpen && (
         <div>
           {imageUrl && <img src={imageUrl} alt={title} style={styles.image} />}
-          <h3 style={styles.title}>{title}</h3>
+          <h3 style={styles.title}>{subtitle}</h3>
           <p style={styles.description}>{desc}</p>
         </div>
       )}
